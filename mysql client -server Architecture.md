@@ -6,7 +6,7 @@ SSH into  MYSQL-SERVER
 
 ![lulu1](https://user-images.githubusercontent.com/94229949/175835242-59a4f875-6f88-4d97-9aa4-e6a2d00a3da6.png)
 
-Updated the MYSQL-SERVER  with command ' sudo apt update ' and ' sudo apt upgrade '
+Updated MYSQL-SERVER  with command ' sudo apt update ' and ' sudo apt upgrade '
 
 ![lulu2](https://user-images.githubusercontent.com/94229949/175835256-addb04ec-a50f-4082-a642-60d30d230d61.png)
 
@@ -32,13 +32,15 @@ For MySQL server to allow connections from remote hosts , i VI into ' sudo vi /e
 
 ![lulu8](https://user-images.githubusercontent.com/94229949/175835651-2a7f2db8-94f2-468a-bb42-9772ed65f743.png)
 
+For the client  to connect to MYSQL-SERVER ,i edited port 3306  inbound rule on MYSQL-SERVER security group on AWS to allow only MYSQL-CLIENT local ip address to connect to MYSQL-SERVER  
 
+![lulua](https://user-images.githubusercontent.com/94229949/175837023-3c0821cc-ee3b-4f8d-9add-bbcf3146bbb5.png)
 
 SSH into MYSQL-CLIENT
 
 ![lulu9](https://user-images.githubusercontent.com/94229949/175835753-890e9123-18a0-473e-83c2-774f648f0c93.png)
 
-Updated the MYSQL-CLIENT with command ' sudo apt update ' and ' sudo apt upgrade '
+Updated  MYSQL-CLIENT with command ' sudo apt update ' and ' sudo apt upgrade '
 
 ![lulu10](https://user-images.githubusercontent.com/94229949/175835797-bc101c4b-d5f2-42e6-b38b-d112528ec337.png)
 
@@ -48,6 +50,9 @@ Installed MYSQL-CLIENT on the Ubuntu Server using ' sudo apt install mysql-clien
 
 ![lulu12](https://user-images.githubusercontent.com/94229949/175835849-3eb02371-03bf-485e-b0f0-d97fa3124ab1.png)
 
-To connect to MYSQL-SERVER from MYSQL-CLIENT  ,i used command " sudo mysql -u busola -h 172.31.92.45 -p ' .I was able to log in and view databases .
+To connect to MYSQL-SERVER from MYSQL-CLIENT ,I used MYSQL-SERVER's local IP address to connect from MYSQL-CLIENT. I ran  command " sudo mysql -u busola -h 172.31.92.45 -p ' . 
+
+I was able to log in and view databases .
 
 ![lulu n-1](https://user-images.githubusercontent.com/94229949/175836011-cc56b57c-ad3c-4ab7-b49f-d1643e339f55.png)
+
