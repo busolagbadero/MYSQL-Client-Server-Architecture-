@@ -1,4 +1,4 @@
-Created Two Ubuntu Servers (MYSQL-SERVER and MYSQL-CLIENT) on AWS.
+Spinned up Two Ubuntu Servers (MYSQL-SERVER and MYSQL-CLIENT) on AWS.
 
 ![lulu0](https://user-images.githubusercontent.com/94229949/175835103-e96539c4-4122-4e8a-8aaa-b2e4b58d1eff.png)
 
